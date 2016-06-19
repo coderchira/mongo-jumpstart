@@ -106,9 +106,9 @@ printjson({message:"tweets have been inserted"});
 db.users.drop();
 
 db.users.insert([
-  {_id:NumberInt(41993), email:"niranjan_awati", alias:"Niranjan Awati", loc :"Pune", roles:["Developer", "Manager", "Admin", "User"]},
-  {_id:NumberInt(106456), email:"ruchira_agarwal", alias:"Ruchira Agarwal", loc :"Pune", roles:["Developer", "Manager", "Admin", "User"]},
-  {_id:NumberInt(52698), email:"victor_s", alias:"A Victor Sundararaj", loc :"Bangalore", roles:["Manager", "Admin", "User"]},
-  {_id:NumberInt(9037), email:"neena_mc", alias:"Neena MC", loc :"Bangalore", roles:["Manager", "Admin", "User"]}
+  {_id:NumberInt(1), email:"person_1@abc.com", alias:"Person1", loc :"Pune", roles:["Developer", "Manager", "Admin", "User"]},
+  {_id:NumberInt(2), email:"person_2@abc.com", alias:"Person2", loc :"Pune", roles:["Developer", "Manager", "Admin", "User"]},
+  {_id:NumberInt(3), email:"person_3@abc.com", alias:"Person3", loc :"Bangalore", roles:["Manager", "Admin", "User"]},
+  {_id:NumberInt(4), email:"person_4@abc.com", alias:"Person4", loc :"Bangalore", roles:["Manager", "Admin", "User"]}
 ]);
 printjson({message:"users have been inserted"});
