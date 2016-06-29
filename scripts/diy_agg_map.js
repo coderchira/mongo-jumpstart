@@ -58,6 +58,16 @@ var drugs  = [{"name":"Alternaria alternata","code":"36987-1862","email":"Aquama
 /*
 first write script to get the data injected into the database.
 then query to get the aggregate of banned drugs across nations.
-do the same query with map-reduce as well.
-
 */
+
+var db = db.getSiblingDB("drugstore");
+db.drugsrepo.drop();
+db.createCollection("drugsrepo");
+db.drugsrepo.insert(drugs);
+
+var bannedDrugs = db.drugsrepo.find({banned:true}).toArray();
+bannedDrugs.forEach(function(el){
+  printjson(el);
+});
+
+//do the same query with map-reduce as well.
